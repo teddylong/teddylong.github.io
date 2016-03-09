@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[多多爸爸]]></title>
+  <subtitle><![CDATA[键盘上的魔鬼]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://blog.teddylong.net/"/>
+  <updated>2016-03-09T02:58:44.000Z</updated>
+  <id>http://blog.teddylong.net/</id>
+  
+  <author>
+    <name><![CDATA[TeddyLong]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[瞎折腾了一星期]]></title>
+    <link href="http://blog.teddylong.net/2016/02/22/%E7%9E%8E%E6%8A%98%E8%85%BE%E4%BA%86%E4%B8%80%E6%98%9F%E6%9C%9F/"/>
+    <id>http://blog.teddylong.net/2016/02/22/瞎折腾了一星期/</id>
+    <published>2016-02-22T05:35:41.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p>一个星期！全都在折腾这设备，那设备的，代码基本都没碰过！全都是配置，配置！输入邮箱已经想吐！真的是好恶心哦！手机，电脑，笔记本，ubuntu，mac，windows，够了！别折腾了！</p>
+<h1 id="别折腾了！"><a href="#别折腾了！" class="headerlink" title="别折腾了！"></a>别折腾了！</h1><h2 id="别折腾了！-1"><a href="#别折腾了！-1" class="headerlink" title="别折腾了！"></a>别折腾了！</h2><h3 id="别折腾了！-2"><a href="#别折腾了！-2" class="headerlink" title="别折腾了！"></a>别折腾了！</h3><h4 id="别折腾了！-3"><a href="#别折腾了！-3" class="headerlink" title="别折腾了！"></a>别折腾了！</h4><h5 id="别折腾了！-4"><a href="#别折腾了！-4" class="headerlink" title="别折腾了！"></a>别折腾了！</h5><h6 id="别折腾了！-5"><a href="#别折腾了！-5" class="headerlink" title="别折腾了！"></a>别折腾了！</h6>]]></content>
+    <summary type="html">
+    <![CDATA[<p>一个星期！全都在折腾这设备，那设备的，代码基本都没碰过！全都是配置，配置！输入邮箱已经想吐！真的是好恶心哦！手机，电脑，笔记本，ubuntu，mac，windows，够了！别折腾了！</p>
+<h1 id="别折腾了！"><a href="#别折腾了！" class="he]]>
+    </summary>
+    
+      <category term="瞎逼逼" scheme="http://blog.teddylong.net/categories/%E7%9E%8E%E9%80%BC%E9%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[在Ubuntu中用ATOM来学习Swift]]></title>
+    <link href="http://blog.teddylong.net/2016/01/27/%E5%9C%A8Ubuntu%E4%B8%AD%E7%94%A8ATOM%E6%9D%A5%E5%AD%A6%E4%B9%A0Swift/"/>
+    <id>http://blog.teddylong.net/2016/01/27/在Ubuntu中用ATOM来学习Swift/</id>
+    <published>2016-01-27T09:51:53.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p>最近很流行ATOM，，而且这半年一直在折腾Ubuntu，所以想用atom学学最新的Swift2.0，写写小例子：）</p>
+<p>atom流行的原因在于有很多的插件，恩，确实很多！所以有什么新奇的想法，不妨往atom这边想想。。。。不过再怎么说，也是因为swift开源了，要么也不会在ubuntu上可以搞！</p>
+<p>1.下载swift的ubuntu并设置好环境变量 （14.04）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://swift.org/builds/ubuntu1404/swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>/swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>-ubuntu14.<span class="number">04</span>.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tar -zxvf swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>-ubuntu14.<span class="number">04</span>.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> PATH=/path/to/swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>-ubuntu14.<span class="number">04</span>/usr/bin/:<span class="string">"<span class="variable">$&#123;PATH&#125;</span>"</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>2.如果你是全新的ubuntu环境，肯定少了很多support的包，运行如下Script</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ apt-get update</span><br><span class="line">$ sudo apt-get install git cmake ninja-build clang uuid-dev libicu-dev icu-devtools libbsd-dev libedit-dev libxml2-dev libsqlite3-dev swig libpython-dev libncurses5-dev pkg-config</span><br></pre></td></tr></table></figure>
+<p>3.检查swift命令是否配置成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ swift --version</span><br></pre></td></tr></table></figure></p>
+<p>来个栗子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">"Hello, Swift!"</span>)</span><br><span class="line"><span class="number">41</span> + <span class="number">1</span></span><br><span class="line">import Glibc</span><br><span class="line">random()</span><br></pre></td></tr></table></figure></p>
+<p>4.下载ATOM的swift支持组件，swift-debugger 和 language-swift<br>如果装好了ATOM，则可以运行如下命令：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apm install swift-debugger language-swift</span><br></pre></td></tr></table></figure></p>
+<p>5.现在就可以创建新的swift项目啦<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir MySwiftProject &amp;&amp; touch MySwiftProject/main.swift &amp;&amp; touch MySwiftProject/Package.swift</span><br></pre></td></tr></table></figure></p>
+<p>然后用atom命令打开这个文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ atom MySwiftProject</span><br></pre></td></tr></table></figure></p>
+<p>可以看到刚才生成的2个文件，一个是主文件main.swift和一个配置文件Package.swift。<br>然后给这个package一个name。把以下代码放在Package.swift中并保存。<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> PackageDescription  </span><br><span class="line"><span class="keyword">let</span> package = <span class="type">Package</span>(  </span><br><span class="line">    name: <span class="string">"MySwiftProject"</span></span><br><span class="line">  )</span><br></pre></td></tr></table></figure></p>
+<p>打开main.swift写点hello world吧：<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> helloString = <span class="string">"Hello, World!"</span>  </span><br><span class="line"><span class="built_in">print</span>(helloString)</span><br></pre></td></tr></table></figure></p>
+<p>按下alt-r来激活swift-debugger package。你会看到这样的界面：<br><img src="http://7xqfs2.com1.z0.glb.clouddn.com/asdasdasdasd.png" alt=""></p>
+<p>其中我们要填写的在输入框里面的就是图中写有「po foo」的地方</p>
+<p>e=MySwiftProject (按回车)<br>p=YourSwiftBinFolder (按回车)</p>
+<p>这时 debugger 就会分别输出”swift path set”和”executable path set”了。可以开始愉快的玩耍啦！！！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近很流行ATOM，，而且这半年一直在折腾Ubuntu，所以想用atom学学最新的Swift2.0，写写小例子：）</p>
+<p>atom流行的原因在于有很多的插件，恩，确实很多！所以有什么新奇的想法，不妨往atom这边想想。。。。不过再怎么说，也是因为swift开源了，要么也不会在ubuntu上可以搞！</p>
+<p>1.下载swift的ubuntu并设置好环境变量 （14.04）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://swift.org/builds/ubuntu1404/swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>/swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>-ubuntu14.<span class="number">04</span>.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tar -zxvf swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>-ubuntu14.<span class="number">04</span>.tar.gz</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> PATH=/path/to/swift-<span class="number">2.2</span>-SNAPSHOT-<span class="number">2015</span>-<span class="number">12</span>-<span class="number">18</span><span class="operator">-a</span>-ubuntu14.<span class="number">04</span>/usr/bin/:<span class="string">"<span class="variable">$&#123;PATH&#125;</span>"</span></span><br></pre></td></tr></table></figure>]]>
+    
+    </summary>
+    
+      <category term="代码" scheme="http://blog.teddylong.net/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Surger神器]]></title>
+    <link href="http://blog.teddylong.net/2016/01/27/Surger%E7%A5%9E%E5%99%A8/"/>
+    <id>http://blog.teddylong.net/2016/01/27/Surger神器/</id>
+    <published>2016-01-27T07:29:59.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="Surger，继Shadowsocks之后的又一大神器"><a href="#Surger，继Shadowsocks之后的又一大神器" class="headerlink" title="Surger，继Shadowsocks之后的又一大神器"></a>Surger，继Shadowsocks之后的又一大神器</h3><p>大家都知道SS在App Store中下架了好久了（中国区），那么在不越狱的情况下，怎么样可以快速的翻墙玩耍呢？下面介绍主角：Surger！</p>
+<p>今天突然想在手机上装SS翻墙看看twitter，翻了半天都是要去申请国外的app账号，然后下载SS来搞，而且ss的iOS版本功能很挫。。。 于是找啊找，看看最近有啥新秀出来没有，还真的找到了 — Surger 。 其实这货昨天就火了。。。朋友圈那事儿嘛，可以抓包请求，来不掏钱看别人发的模糊照片。但是昨天我还没意识到这货还可以用来当翻墙神器。</p>
+<p>不多说了！说说下载使用！</p>
+<a id="more"></a>
+<p>条件：</p>
+<ol>
+<li>Shadowsocks账户，充了钱的。。</li>
+<li>再准备几块钱。。。</li>
+</ol>
+<p>先说下条件2， 如果你有美区的App Store账户，并且愿意买Surger这个应用，那这条对你没用。我是在某宝花那几块钱，“租用”别人的账号，在已购里面下的。毕竟我比较穷。。。下载这个surger的过程就不多说了。</p>
+<p>打开Surge，有一个默认的配置，不管它，直接右上角的Edit添加一个新的配置。我选第二项，from URL，为啥？因为SS网站上已经有了针对Surger配置的下载！！！够牛！</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/29832-80ccc5a52d21e3b1.jpg" alt=""></p>
+<p>好了，现在去SS网站下载你的Surger的配置吧。。</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/asdasd.png" alt=""></p>
+<p>Down下来！大家都是程序员吧？随便丢个自己本地建的website里面，在Surger里面输入网址就可以get下来啦！然后按照步骤走，一步一步来就好！</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/29832-70f92b27573c15ee.jpg" alt=""></p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/29832-fc35e53b59d2893f.jpg" alt=""></p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/29832-dc06f280ef4ff1bc.jpg" alt=""></p>
+<p>PS: 当然，如果你想手动输入那些设置也OK。<br>参照如下：</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/29832-92d6314b23065e36.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="Surger，继Shadowsocks之后的又一大神器"><a href="#Surger，继Shadowsocks之后的又一大神器" class="headerlink" title="Surger，继Shadowsocks之后的又一大神器"></a>Surger，继Shadowsocks之后的又一大神器</h3><p>大家都知道SS在App Store中下架了好久了（中国区），那么在不越狱的情况下，怎么样可以快速的翻墙玩耍呢？下面介绍主角：Surger！</p>
+<p>今天突然想在手机上装SS翻墙看看twitter，翻了半天都是要去申请国外的app账号，然后下载SS来搞，而且ss的iOS版本功能很挫。。。 于是找啊找，看看最近有啥新秀出来没有，还真的找到了 — Surger 。 其实这货昨天就火了。。。朋友圈那事儿嘛，可以抓包请求，来不掏钱看别人发的模糊照片。但是昨天我还没意识到这货还可以用来当翻墙神器。</p>
+<p>不多说了！说说下载使用！</p>]]>
+    
+    </summary>
+    
+      <category term="周边" scheme="http://blog.teddylong.net/categories/%E5%91%A8%E8%BE%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[工作环境已经setup好]]></title>
+    <link href="http://blog.teddylong.net/2016/01/25/%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E5%B7%B2%E7%BB%8Fsetup%E5%A5%BD/"/>
+    <id>http://blog.teddylong.net/2016/01/25/工作环境已经setup好/</id>
+    <published>2016-01-25T02:29:28.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p> 好像一切都准备好了呢，，，看来hexo也差不多可以了！不错！之后就一直写写写了！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo GO</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p> 好像一切都准备好了呢，，，看来hexo也差不多可以了！不错！之后就一直写写写了！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</spa]]>
+    </summary>
+    
+      <category term="瞎逼逼" scheme="http://blog.teddylong.net/categories/%E7%9E%8E%E9%80%BC%E9%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[没有道理不努力哦]]></title>
+    <link href="http://blog.teddylong.net/2016/01/25/%E6%B2%A1%E6%9C%89%E9%81%93%E7%90%86%E4%B8%8D%E5%8A%AA%E5%8A%9B%E5%93%A6/"/>
+    <id>http://blog.teddylong.net/2016/01/25/没有道理不努力哦/</id>
+    <published>2016-01-24T17:38:16.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="真的没有道理不努力哦"><a href="#真的没有道理不努力哦" class="headerlink" title="真的没有道理不努力哦"></a>真的没有道理不努力哦</h3><p>看看这装备，，哪里有不努力的理由呢？你告诉我，还能挑什么？<br>真的是不可以不出成绩了，，，一定了！加油了！</p>
+<p>#附高清办公照 ：）</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/FuIbL02SSNiQR9YGxCBjgfCGElmJ" alt="IMG_0303"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="真的没有道理不努力哦"><a href="#真的没有道理不努力哦" class="headerlink" title="真的没有道理不努力哦"></a>真的没有道理不努力哦</h3><p>看看这装备，，哪里有不努力的理由呢？你告诉我，还能挑什么？<br>真的是不可]]>
+    </summary>
+    
+      <category term="瞎逼逼" scheme="http://blog.teddylong.net/categories/%E7%9E%8E%E9%80%BC%E9%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[新的一年]]></title>
+    <link href="http://blog.teddylong.net/2016/01/23/thoughts/"/>
+    <id>http://blog.teddylong.net/2016/01/23/thoughts/</id>
+    <published>2016-01-22T16:42:30.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="哈哈哈，这个就是新的博客了么？"><a href="#哈哈哈，这个就是新的博客了么？" class="headerlink" title="哈哈哈，这个就是新的博客了么？"></a>哈哈哈，这个就是新的博客了么？</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<h3 id="新的一年，，，都下雪了！"><a href="#新的一年，，，都下雪了！" class="headerlink" title="新的一年，，，都下雪了！"></a>新的一年，，，都下雪了！</h3><p><strong>下了好大的雪</strong></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="哈哈哈，这个就是新的博客了么？"><a href="#哈哈哈，这个就是新的博客了么？" class="headerlink" title="哈哈哈，这个就是新的博客了么？"></a>哈哈哈，这个就是新的博客了么？</h2><figure class="highli]]>
+    </summary>
+    
+      <category term="瞎逼逼" scheme="http://blog.teddylong.net/categories/%E7%9E%8E%E9%80%BC%E9%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[In Case]]></title>
+    <link href="http://blog.teddylong.net/2012/09/29/In-Case/"/>
+    <id>http://blog.teddylong.net/2012/09/29/In-Case/</id>
+    <published>2012-09-29T03:34:36.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/before-i-die.jpg" alt=""></p>
+<p>In case I die outside the country, I wish all the people that I mention see this part!</p>
+<p>I Love My Family, especially my mother, i love you always… Pls forgive your son if that really happen.</p>
+<p>For my honey, Candy~ I know sometimes I am not a good BF, pls forgive me for that, in my deep heart, you are already my wife! If you are the survivor, Find somebody that better than me! Love You, Honey!</p>
+<p>For my Friends… i think there is no need to say much word, pls remember me, that is enough.<br>yours Teddy</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/before-i-die.jpg" alt=""></p>
+<p>In case I die outside the country, I wish all the people]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Seven words help me]]></title>
+    <link href="http://blog.teddylong.net/2011/08/15/Seven-words-help-me/"/>
+    <id>http://blog.teddylong.net/2011/08/15/Seven-words-help-me/</id>
+    <published>2011-08-15T03:07:30.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<ol>
+<li><p>Slow down. The more you understand, the less you have to memorize. Don’t just read. Stop and think. When the book asks you a question, don’t just skip to the answer. Imagine that someone really is asking the question. The more deeply you force your brain to think, the better chance you have of learning and remembering.</p>
+</li>
+<li><p>Do the exercises. Write your own notes. We put them in, but if we did them for you, that would be like having someone else do your workouts for you. And don’t just look at the exercises. Use a pencil. There’s plenty of evidence that physical activity while learning can increase the learning.</p>
+</li>
+<li><p>Make this the last thing you read before bed. Or at least the last challenging thing. Part of the learning (especially the transfer to<br>long-term memory) happens after you put the book down. Your brain needs time on its own, to do more processing. If you put in something new during that processing time, some of what you just learned will be lost.</p>
+</li>
+<li><p>Drink water. Lots of it. Your brain works best in a nice bath of fluid. Dehydration (which can happen before you ever feel thirsty) decreases cognitive function.</p>
+</li>
+<li><p>Talk about it. Out loud. Speaking activates a different part of the brain. If you’re trying to understand something, or increase your chance of remembering it later, say it out loud. Better still, try to explain it out loud to someone else. You’ll learn more quickly, and you might uncover ideas you hadn’t known were there when you were reading about it.</p>
+</li>
+<li><p>Listen to your brain. Pay attention to whether your brain is gettingoverloaded. If you find yourself starting to skim the surface or forget what you just read, it’s time for a break. Once you go past a certain point, you won’t learn faster by trying to shove more in, and you might even hurt the process.</p>
+</li>
+<li><p>Feel something. Your brain needs to know that this matters. Get involved with the stories. Make up your own captions for the photos. Groaning over a bad joke is still better than feeling nothing at all.</p>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<ol>
+<li><p>Slow down. The more you understand, the less you have to memorize. Don’t just read. Stop and think. When the book asks you a que]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Mother’s Day 2011]]></title>
+    <link href="http://blog.teddylong.net/2011/05/07/Mother%E2%80%99s-Day-2011/"/>
+    <id>http://blog.teddylong.net/2011/05/07/Mother’s-Day-2011/</id>
+    <published>2011-05-07T03:05:54.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/mothers_day_mkh.jpg" alt=""></p>
+<p>Tomorrow is the Mother’s Day 2011. Your son is far away from you, nothing can give you but my forever love. I always think that if I would’t go out for work, I stay with you, in FX… But for our family, someone must have do this, because we wish our family become stronger and stronger, like my father, your H… how pride of me when I talk about this… Believe me, when I think everything is ready, I never leave you alone!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/mothers_day_mkh.jpg" alt=""></p>
+<p>Tomorrow is the Mother’s Day 2011. Your son is far aw]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[10000 Days]]></title>
+    <link href="http://blog.teddylong.net/2011/04/14/10000-Days/"/>
+    <id>http://blog.teddylong.net/2011/04/14/10000-Days/</id>
+    <published>2011-04-14T03:04:07.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p>妈妈爸爸生我第10000天，对他们的爱，我会用一辈子来回报~ 这10000天，有苦有甜，有悲有喜，什么都有~ 下个10000天是要我来孝敬他们的时候了。。。</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/10000.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>妈妈爸爸生我第10000天，对他们的爱，我会用一辈子来回报~ 这10000天，有苦有甜，有悲有喜，什么都有~ 下个10000天是要我来孝敬他们的时候了。。。</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/100]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[妈妈的味道]]></title>
+    <link href="http://blog.teddylong.net/2010/06/27/%E5%A6%88%E5%A6%88%E7%9A%84%E5%91%B3%E9%81%93/"/>
+    <id>http://blog.teddylong.net/2010/06/27/妈妈的味道/</id>
+    <published>2010-06-27T02:58:34.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p>妈妈这次来上海教会了我做饭的基本知识:) 最近我也做了一些基本的小菜，哈哈，不是美味，但是不用去叫那不怎么干净的外卖了。</p>
+<p>下面把最近做的菜记录一下，以后也知道自己是怎么成长的，哇哈哈 :)  (不知道还会不会成长)</p>
+<p>土豆炖豆角，这个我自认为确实做的好，呵呵，下次继续努力：</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2249.jpg" alt=""></p>
+<p>湾仔码头冷冻面，这个是速冻食品，由Shadow介绍！这个可不是放进锅里煮熟就好了，要看水呀，火候呀，嘻嘻：</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2255.jpg" alt=""></p>
+<p>懒人套餐： 炒鸡蛋，鱼罐头，香肠…. 真的能吃很多饭！</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2257.jpg" alt=""></p>
+<p>昨天的2个菜，西红柿炒鸡蛋，酸辣白菜！ 西红柿炒鸡蛋很不错，尤其第二次吃，酸辣白菜醋有点点多了，不过也可以，一次就全吃完了：</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2261.jpg" alt=""></p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2262.jpg" alt=""></p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2266.jpg" alt=""></p>
+<p>继续努力~~ :)</p>
+<p>晚上新出炉的小菜菜，哈哈</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2267.jpg" alt=""></p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_2271.jpg" alt=""></p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/IMG_22731.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>妈妈这次来上海教会了我做饭的基本知识:) 最近我也做了一些基本的小菜，哈哈，不是美味，但是不用去叫那不怎么干净的外卖了。</p>
+<p>下面把最近做的菜记录一下，以后也知道自己是怎么成长的，哇哈哈 :)  (不知道还会不会成长)</p>
+<p>土豆炖豆角，这个我自认为确实做]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Sorry, Waye Wong~]]></title>
+    <link href="http://blog.teddylong.net/2010/04/27/Sorry-Waye-Wong/"/>
+    <id>http://blog.teddylong.net/2010/04/27/Sorry-Waye-Wong/</id>
+    <published>2010-04-27T02:46:40.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/100_5141.jpg" alt=""></p>
+<p>Expo 2010… Waye’s dream, break by me, totally.  Caused by my fault, the ticket can’t be transformed in time… so sorry to you, Waye! This is not the important thing which seen by other guys, but for me, it means I have not enough ability to handle two or more things at one time, one thing perfect, one thing go to hell… Think deeply, the root reason is lazy~ So this is not the blog entity for Wang, but for my-self, warning me, if could, I wish it lasts the whole life.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/100_5141.jpg" alt=""></p>
+<p>Expo 2010… Waye’s dream, break by me, totally.  Caused by my]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Forget it My boy]]></title>
+    <link href="http://blog.teddylong.net/2010/04/18/Forget-it-My-boy/"/>
+    <id>http://blog.teddylong.net/2010/04/18/Forget-it-My-boy/</id>
+    <published>2010-04-18T02:24:58.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/mememe.jpg" alt=""></p>
+<p>Like everybody says, everything gonna be OK. I believe this. Since last month, since she was past, seems my whole life became grey, or even crash… God told me in the dream, the whole thing wasn’t my fault, when she loves you, it’s real, when she doesn’t love you, it’s also real, Go ahead, my boy! God, when you come into my world in a fews month later, I swear you will see a new me, a re-born one!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/mememe.jpg" alt=""></p>
+<p>Like everybody says, everything gonna be OK. I believe this. S]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Thank you, Shadow]]></title>
+    <link href="http://blog.teddylong.net/2010/04/12/Thank-you-Shadow/"/>
+    <id>http://blog.teddylong.net/2010/04/12/Thank-you-Shadow/</id>
+    <published>2010-04-12T02:18:56.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/shadow.jpg" alt=""></p>
+<p>Shadow, my classmate, my desk-mate, my friend… A pretty girl with kind heart. Recently, she made me feel not so lonely, told me some funny stories  preventing my tough life continues. I wanna thank you, shadow, because of you, I understand something, and for kind-hearted girl, I think I knew a few different parts.</p>
+<p>Another thing is I wanna say I like talk to you, or chat… whatever, although I know you since we are pupils… but we are not familiar with each other, even like this, I am not afraid to tell you anything…   Buuuuut, I like chatting with you, also wasted most of your coffee time… feel so compunction!!!  I owed you six meal, or you can select other things instead, but do NOT forget, the one “Secret” equals two meal, hahahah~~ Thank you for everything again.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/shadow.jpg" alt=""></p>
+<p>Shadow, my classmate, my desk-mate, my friend… A pretty girl w]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[One night in BJ, maybe two or more]]></title>
+    <link href="http://blog.teddylong.net/2010/04/06/One-night-in-BJ-maybe-two-or-more/"/>
+    <id>http://blog.teddylong.net/2010/04/06/One-night-in-BJ-maybe-two-or-more/</id>
+    <published>2010-04-06T02:10:10.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/foodfight.jpg" alt=""></p>
+<p>On April Four day, I came to the dream place again, Beijing! It ‘s My capital, My second hometown, My happy-time place… how exciting I am! ? The answer is absolutely, very, quite… One word, COOL! I still could see how happy when I lived there almost four years before. Even all the subway around create a great sound…</p>
+<p>The goal of this trip is helping! Help my classmate to build one website network service for his new small tiny company, lol :) For personal idea, I can eat plentyof food which just belong to BJ. Maybe other place also has those food, but the taste…never be the same as here. WOW, gottna miss something, I met WangWei and Shadow… buffet meal, delicious!</p>
+<p>This time, I am listening the song, one night in BJ, feel so good, so happiness… I will come to see you, my best city in the bottom of my heart!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/foodfight.jpg" alt=""></p>
+<p>On April Four day, I came to the dream place again, Beijing]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Chinese New Year 2010]]></title>
+    <link href="http://blog.teddylong.net/2010/02/13/Chinese-New-Year-2010/"/>
+    <id>http://blog.teddylong.net/2010/02/13/Chinese-New-Year-2010/</id>
+    <published>2010-02-13T01:45:24.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/DongDongChiang.jpg" alt=""></p>
+<p>Happy chinese new year to all my family(include my little pets), my friends, my known guys… Wish everyone in the new year get more money, yeah, money… and your love!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/DongDongChiang.jpg" alt=""></p>
+<p>Happy chinese new year to all my family(include my lit]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[是你们让我有勇气前行]]></title>
+    <link href="http://blog.teddylong.net/2010/01/25/%E6%98%AF%E4%BD%A0%E4%BB%AC%E8%AE%A9%E6%88%91%E6%9C%89%E5%8B%87%E6%B0%94%E5%89%8D%E8%A1%8C/"/>
+    <id>http://blog.teddylong.net/2010/01/25/是你们让我有勇气前行/</id>
+    <published>2010-01-25T01:36:52.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p>我爱爸爸妈妈！</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/keeprun.jpg" alt=""></p>
+<p>我很幸福，爸爸妈妈，因为有你们，我才有前进的勇气，才有拼搏的力量。谢谢你们！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>我爱爸爸妈妈！</p>
+<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/keeprun.jpg" alt=""></p>
+<p>我很幸福，爸爸妈妈，因为有你们，我才有前进的勇气，才有拼搏的力量。谢谢你们！</p>
+]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[纪念]]></title>
+    <link href="http://blog.teddylong.net/2009/10/29/%E7%BA%AA%E5%BF%B5/"/>
+    <id>http://blog.teddylong.net/2009/10/29/纪念/</id>
+    <published>2009-10-29T01:34:06.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/fatherLove.jpg" alt="Father"></p>
+<p>纪念您的养育之恩，纪念您的教导之情，纪念你的所有…</p>
+<p>Remember you good, remember you bad, remember everything of you…</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/fatherLove.jpg" alt="Father"></p>
+<p>纪念您的养育之恩，纪念您的教导之情，纪念你的所有…</p>
+<p>Remember you good, ]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[My House Draft]]></title>
+    <link href="http://blog.teddylong.net/2009/10/14/My-House-Draft/"/>
+    <id>http://blog.teddylong.net/2009/10/14/My-House-Draft/</id>
+    <published>2009-10-14T01:32:21.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/myhouse1.jpg" alt=""></p>
+<p>Teddy’s House Draft… For my poor dream, I have to work hard !</p>
+<p>In this entity, I will update the draft of the whole project once I got the new idea! Just give me the feedback~~</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/myhouse1.jpg" alt=""></p>
+<p>Teddy’s House Draft… For my poor dream, I have to work hard ]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[I Love My Mom]]></title>
+    <link href="http://blog.teddylong.net/2009/08/30/I-Love-My-Mom/"/>
+    <id>http://blog.teddylong.net/2009/08/30/I-Love-My-Mom/</id>
+    <published>2009-08-30T10:29:35.000Z</published>
+    <updated>2016-03-09T02:58:44.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/motherandme.jpg" alt="Mother"></p>
+<p>I just want to say this, “I Love My Mom!” No reason, no why, every time and everywhere, the whole life of mine belongs to you, mother! Maybe some day I have got much money, but you are my mother, maybe some day I have lost the job, I am still your son!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xqfs2.com1.z0.glb.clouddn.com/motherandme.jpg" alt="Mother"></p>
+<p>I just want to say this, “I Love My Mom!” No reason]]>
+    </summary>
+    
+      <category term="很久以前" scheme="http://blog.teddylong.net/categories/%E5%BE%88%E4%B9%85%E4%BB%A5%E5%89%8D/"/>
+    
+  </entry>
+  
+</feed>
